@@ -13,10 +13,16 @@ body {
     overflow: hidden;
     padding: 20px 0;
 }
+:root{
+    --azul-principal: #0F172A;
+    --azul-secundario: #2563EB;
+    --gris-principal: #475569;
+}
+
 
 /* ------------------- Cabecera ------------------- */
 header {
-    background: #002244; 
+    background: var(--azul-principal); 
     color: #ffffff;
     padding: 60px 0;
     text-align: center;
@@ -28,7 +34,7 @@ header h1 {
 }
 
 header h2 {
-    color: #1abc9c; 
+    color: var(--azul-secundario); 
     font-weight: 300;
     margin-top: 0;
 }
@@ -44,14 +50,14 @@ header h2 {
 }
 
 .btn.primary {
-    background-color: #1abc9c;
-    color: #002244;
+    background-color: var(--azul-secundario);
+    color: var(--azul-principal);
 }
 
 .btn.secondary {
     background-color: #fff;
-    color: #002244;
-    border: 1px solid #002244;
+    color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
 }
 
 .btn:hover {
@@ -60,13 +66,13 @@ header h2 {
 
 /* ------------------- Secciones ------------------- */
 section {
-    padding: 40px 0;
+    padding: 0 0 40px 0;
     border-bottom: 1px solid #ddd;
 }
 
 section h3 {
     text-align: center;
-    color: #002244;
+    color: var(--azul-principal);
     margin-bottom: 30px;
     font-size: 2em;
 }
@@ -76,14 +82,14 @@ section h3 {
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 5px solid #1abc9c;
+    border-left: 5px solid var(--azul-secundario);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .tag {
     display: inline-block;
     background: #e0e0e0;
-    color: #555;
+    color: var(--gris-principal);
     padding: 3px 8px;
     margin-right: 5px;
     border-radius: 3px;
@@ -95,13 +101,18 @@ section h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: center;
 }
 
 .skills-grid > div {
     flex-basis: 30%; 
     min-width: 250px;
     padding: 10px;
+}
+
+.skills-grid  h4 {
+    padding: 0;
+    margin: 0;
 }
 
 .skills-grid ul {
@@ -111,14 +122,14 @@ section h3 {
 
 /* ------------------- Footer ------------------- */
 footer {
-    background: #333;
+    background: var(--gris-principal);
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #1abc9c;
+    color: var(--azul-secundario);
     text-decoration: none;
 }
 
