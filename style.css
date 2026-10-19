@@ -77,6 +77,24 @@ section h3 {
     font-size: 2em;
 }
 
+/* Tarjeta para la sección Sobre Mí */
+.sobre-mi-card {
+    background: #fff;
+    padding: 25px 30px;
+    border-left: 5px solid var(--azul-secundario);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1em;
+    color: #333;
+}
+
+.sobre-mi-card p {
+    margin-bottom: 15px;
+}
+
+.sobre-mi-card p:last-child {
+    margin-bottom: 0;
+}
+
 /* Proyectos */
 .proyecto-card {
     background: #fff;
